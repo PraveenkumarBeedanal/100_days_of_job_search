@@ -11,14 +11,14 @@
 3. >>
     * it also redirects the output of command to file, but instead of overwrite it appends to file
     * eg; `whoami > today.txt` -- content of today.txt
-    ![alt text](image-1.png)
+    ![alt text](images/image-1.png)
     * it also creats file if it doesn't exists
 
 4. cat
     * concatenate and prints the file
     * eg; `cat today.txt` -- prints the file content to terminal
     * eg; `cat today.txt whoami.txt > concatenates` -- prints both file content one after another and save to **concatenates** file
-    ![alt text](image-2.png)
+    ![alt text](images/image-2.png)
     * `cat -n today.txt` -- prints along with line number
 
 5. less
@@ -40,7 +40,7 @@
     * output of one command to another command
     * eg; `ls -l | wc` -- output of list files to word count command
     * prints lines, words and byte counts
-    ![alt text](image-3.png)
+    ![alt text](images/image-3.png)
 
 9. sort
     * sorts the information
@@ -70,7 +70,7 @@
     
 12. diff
     * to find difference between 2 files
-    ![alt text](image-4.png)
+    ![alt text](images/image-4.png)
     * 1c1 - line 1 on file 1 changed line 1 on file 2
 
 13. find
@@ -102,7 +102,7 @@
 
 18. ps
     * display information about running processes in the system
-    * ![alt text](image-5.png)
+    * ![alt text](images/image-5.png)
     * `ps ax` -- to look for all process running in the system(both user ran and inbuilt system processes)
 
 19. top
@@ -119,4 +119,3 @@
 21. killall
     * similar to kill, instead sending signal to process id sends to multiple processes
     * `killall -SIGKILL node` -- name of the proccess is 'node'
-    
