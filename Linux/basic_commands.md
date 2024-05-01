@@ -30,7 +30,7 @@
 7. Absolute paths
     * all absolute paths starts with **'/'** root directory
     * we can't go above  **'/'**, since it's the root
-![alt text](image.png)
+    ![alt text](images/image.png)
 
 8. mkdir
     * use to create directory/folder

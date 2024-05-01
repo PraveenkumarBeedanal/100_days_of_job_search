@@ -28,7 +28,7 @@
     * create an archive, grouping multiple files into single file
     * `tar -cf archive.tar today.txt try.txt today_journal.txt` -- doesn't compress just create the 'archive.tar' file
     * `tar -tf archive.tar` -- display files in archive
-    ![alt text](image-6.png)
+    ![alt text](images/image-6.png)
     * look into reference handbook for more options
 
 8. nano
@@ -38,7 +38,7 @@
 9. alias
     * allows own aliases, mean custom the commands
     * `alias myls='ls -la'`
-    ![alt text](image-7.png)
+    ![alt text](images/image-7.png)
     * alias is not permanent, it's available only within current session or terminal
     * to persist alias, store it in .bash_profile file, so .bash_profile runs each time terminal opens
     * `alias count=echo {1..99}` -- when i write 'count', prints 1 to 99 numbers
@@ -55,11 +55,11 @@
     * hardlink
         * doesn't copy the content of file to another file
         * `ln original.txt hardlink.txt`
-        ![alt text](image-8.png)   
+        ![alt text](images/image-8.png)   
         * once we remove original.txt, hardlink.txt still present
     * softlink
         * `ln -s original.txt symlink.txt`
-        ![alt text](image-9.png)
+        ![alt text](images/image-9.png)
         * once we remove original.txt, symlink.txt also got removed
 
 12. who
@@ -88,14 +88,14 @@
     
 17. chmod
     * change the permission of file or directory
-    * ![alt text](image-11.png)
+    ![alt text](images/image-11.png)
     * above image says add write permission to group
-    * ![alt text](image-12.png)
+    ![alt text](images/image-12.png)
     * above image says, remove write permissions for all
 
 
 IMPORTANT COMMANDS
 
-![alt text](image-13.png)
+![alt text](images/image-13.png)
 
 
