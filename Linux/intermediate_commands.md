@@ -59,4 +59,64 @@
     * `sort duplicates.txt | uniq -c | sort -n` -- sort the rows count
  
  
+11. expansions 
+    * eg; `echo ~`, here tilda is expansion
+    * `echo $PATH`, here path is the environment variable , it's also the expansion
+    * **path name expansions**
+        * `echo *` -- prints all the files and folders in current directory
+        * `echo *.txt` -- prints only .txt files
+        * `echo app.??` -- matches files starts with app. and two letter extensions
+        * `echo Day{1..365}.txt` -- prints 1 to 365 numbers, we can create files using `touch Day{1..365}.txt`
+    
+12. diff
+    * to find difference between 2 files
+    ![alt text](image-4.png)
+    * 1c1 - line 1 on file 1 changed line 1 on file 2
 
+13. find
+    * used to find files or folders matching the pattern
+    * eg; `find . -name '*c*'` -- find files which has c in there name
+    * `find . -type d` -- finds the directories
+    * `find . -type f` -- finds the files in the current directories
+    * lot more things refer the handbook
+
+14. grep
+    * search inside the file
+    * eg; `grep praveen today.txt` -- search for praveen inside file
+    * eg; `grep -n praveen today.txt` -- prints line number along with search line
+    * `grep -nC 2  praveen today.txt` -- prints 2 line before and after search string
+    * `grep -r praveen .` -- search recursively in the current directory
+
+15. du
+    * disk usage of files or directory
+    * `du -mh ~/Downloads` -- prints the file size in human readable format
+
+16. df
+    * display disk space of the system
+    * `df -h` -- whole system disk space
+    * `df -h Downloads`
+
+17. history
+    * shows the history of the commands you ran previously
+    * eg; `history | less` -- shows history commands in less page viewer
+
+18. ps
+    * display information about running processes in the system
+    * ![alt text](image-5.png)
+    * `ps ax` -- to look for all process running in the system(both user ran and inbuilt system processes)
+
+19. top
+    * opens new window and shows top most cpu intesive process
+    * eg; `top`
+    * eg; `top -o mem` -- memory intesive processes
+
+20. kill
+    * not just used to terminate the program
+    * `kill <pid>` -- sends terminate signal(SIGTERM) to processes
+    * SIGTERM -- sends terminate signal
+    * SIGKILL -- brutal which kills the proccess
+
+21. killall
+    * similar to kill, instead sending signal to process id sends to multiple processes
+    * `killall -SIGKILL node` -- name of the proccess is 'node'
+    
